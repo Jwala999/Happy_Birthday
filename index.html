@@ -211,9 +211,9 @@
     <canvas class="confetti-canvas"></canvas>
     <div class="container">
         <h1>Happy Birthday, Riya Bunny!</h1>
-        <p class="typing-text">Wishing you a day full of love, laughter, and joy, I wish you be the happy always!</p>
+        <p class="typing-text">Wishing you a day full of love, laughter, and joy!</p>
         <div class="image-gallery" id="imageGallery"></div>
-        <button class="play-button" onclick="playBirthdaySong()">Play Your Song</button>
+        <button class="play-button" onclick="playBirthdaySong()">Play Birthday Song</button>
         <a href="gift.html" class="back-link">Back to Gift Page</a>
     </div>
 
@@ -222,7 +222,7 @@
         <img class="modal-content" id="modalImage">
     </div>
 
-    <audio id="birthdaySong" src="Song/Song.mp3"></audio>
+    <audio id="birthdaySong" src="song/song.mp3"></audio>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script>
@@ -312,7 +312,6 @@
         // Play birthday song
         function playBirthdaySong() {
             const audio = document.getElementById('birthdaySong');
-            audio.playbackRate = 0.8; // Slowed-down effect
             audio.play().catch(error => {
                 console.log('Audio playback failed:', error);
             });
